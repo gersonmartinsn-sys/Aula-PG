@@ -1,0 +1,17 @@
+
+div {
+    width: 100px;
+    height: 10px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32); /* Gradiente de fundo */
+    border: 2px solid #333; /* Borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin: 20px right; /* Centralizar horizontalmente */
+    padding: 15px; /* Espaçamento interno */
+    color: white; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte */
+    text-align: center; /* Alinhamento do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

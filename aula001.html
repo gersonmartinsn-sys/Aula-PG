@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 20%;
+    }
+    input{
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        margin: 10px;
+    }
+    button{
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(162, 0, 255);
+        color: white;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(162, 0, 255);
+    }
+    p{
+        font-size: 17px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <input type="text" id="valor1" placeholder="digite um valor">
+    <input type="text" id="valor2" placeholder="digite outro valor">
+    <button id="calcular" onclick="somar()"> Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function somar(){
+           const numero1 = parseFloat(document.getElementById('valor1').value)
+           const numero2 = parseFloat(document.getElementById('valor2').value)
+           const resultado = numero1 + numero2
+           document.getElementById('resultado').innerText = `O resultado da soma é ${resultado}`
+    
+        }
+
+        
+    </script>
+</body>
+</html>
